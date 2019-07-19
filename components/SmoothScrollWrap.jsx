@@ -1,25 +1,37 @@
 import React from "react";
 import { withRouter } from "next/router";
-// import { TweenLite } from "gsap/umd/TweenMax";
 
 class SmoothScrollWrap extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  scrollbar = null;
 
   componentDidMount() {
     this.fetchElements();
-    const Scrollbar = require("smooth-scrollbar").default;
-    class HorizontalScroll extends Scrollbar.ScrollbarPlugin {
-      static pluginName = "horizontalScroll";
+    this.horizontalScrollSetup();
 
+    const storyScrollbar = this.scrollbar.init(document.querySelector(".story"), {
+      alwaysShowTracks: true
+    });
+
+    const listener = status => {
+      const x = status.offset.x;
+      console.log(x);
+    };
+
+    storyScrollbar.addListener(listener);
+  }
+
+  fetchElements = () => {
+    this.container = document.querySelector(".story");
+  };
+
+  horizontalScrollSetup = () => {
+    this.scrollbar = require("smooth-scrollbar").default;
+    class HorizontalScroll extends this.scrollbar.ScrollbarPlugin {
       transformDelta(delta, fromEvent) {
         if (!/wheel/.test(fromEvent.type)) {
           return delta;
         }
-
         const { x, y } = delta;
-
         return {
           y: 0,
           x: Math.abs(x) > Math.abs(y) ? x : y
@@ -29,22 +41,7 @@ class SmoothScrollWrap extends React.Component {
     const OverscrollPlugin = require("smooth-scrollbar/plugins/overscroll").default;
     HorizontalScroll.pluginName = "horizontalScroll";
     OverscrollPlugin.pluginName = "overScroll";
-    Scrollbar.use(HorizontalScroll, OverscrollPlugin);
-
-    const scrollbar = Scrollbar.init(document.querySelector(".story"), {
-      alwaysShowTracks: true
-    });
-
-    const listener = status => {
-      const x = status.offset.x;
-      console.log(x);
-    };
-
-    scrollbar.addListener(listener);
-  }
-
-  fetchElements = () => {
-    this.container = document.querySelector(".story");
+    this.scrollbar.use(HorizontalScroll, OverscrollPlugin);
   };
 
   render() {
