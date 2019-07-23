@@ -11,45 +11,27 @@ html {
 }
 
 body {
-  font-family: "EB Garamond", serif;
+  font-family: $font-serif;
   font-size: 1.4rem;
   line-height: 1.4;
   letter-spacing: 0.3px;
-  color: #fff;
+  color: $color-body;
+  margin: 0;
+  padding: 0;
+  background-color: $color-main;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
   padding: 0;
 }
 
-a,
-.link-border {
-  color: $color-body;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-  font-size: 1.4rem;
-  font-weight: bold;
-  letter-spacing: 0.4px;
-
-  &:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 1px;
-    bottom: -2px;
-    left: 0;
-    background-color: $color-body;
-    transform-origin: left center;
-    transition: transform 0.5s;
-    transform: scaleX(1) translateZ(0);
-  }
-
-  &:hover {
-    &:after {
-      transform-origin: right 0;
-      transform: scaleX(0) translateZ(0);
-    }
-  }
+h1 {
+  font-size: 18.19em;
 }
 
 p,
@@ -57,7 +39,7 @@ ul,
 ol,
 blockquote,
 small {
-  margin: 0 0 2rem 0;
+  margin: 0;
 }
 
 ul,

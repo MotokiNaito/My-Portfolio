@@ -5,9 +5,7 @@ const IndexPage = () => {
     <main className="story">
       <div className="story-inner">
         <section className="panel">
-          <p className="text">
-            is home to some big ideas. Like building 43 urban homes{" "}
-          </p>
+          <h1 className="text">Motoki Naito</h1>
         </section>
       </div>
     </main>
