@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: $font-serif;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   line-height: 1.4;
   letter-spacing: 0.3px;
   color: $color-body;
@@ -28,10 +28,26 @@ h4,
 h5 {
   margin: 0;
   padding: 0;
+  line-height: 1;
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 18.19em;
+  font-size: 18.19rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  line-height: 0.72;
+}
+h2 {
+  font-size: 11.6rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 3.8rem;
+}
+h4 {
+  font-size: 2.4rem;
 }
 
 p,
@@ -40,6 +56,7 @@ ol,
 blockquote,
 small {
   margin: 0;
+  padding: 0;
 }
 
 ul,

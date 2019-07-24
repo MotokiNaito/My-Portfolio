@@ -8,7 +8,7 @@ class SmoothScrollWrap extends React.Component {
     this.fetchElements();
     this.horizontalScrollSetup();
 
-    const storyScrollbar = this.scrollbar.init(document.querySelector(".story"), {
+    const storyScrollbar = this.scrollbar.init(document.querySelector(".home"), {
       alwaysShowTracks: true
     });
 
@@ -21,7 +21,7 @@ class SmoothScrollWrap extends React.Component {
   }
 
   fetchElements = () => {
-    this.container = document.querySelector(".story");
+    this.container = document.querySelector(".home");
   };
 
   horizontalScrollSetup = () => {
