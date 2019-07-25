@@ -1,0 +1,14 @@
+.header {
+  position: fixed;
+  top: 34px;
+  left: 40px;
+  z-index: 10;
+  .main-nav {
+    ul {
+      display: flex;
+      li {
+        margin-right: 3rem;
+      }
+    }
+  }
+}

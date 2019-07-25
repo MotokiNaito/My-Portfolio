@@ -18,21 +18,31 @@
 }
 
 .about {
-  width: 100vw;
+  width: 110vw;
   &__fname {
     position: absolute;
     left: 40px;
     bottom: 50%;
+    z-index: 5;
   }
   &__lname {
     position: absolute;
     left: 600px;
     bottom: calc(25% + 20px);
+    z-index: 5;
   }
   &__title {
     position: absolute;
     left: 40px;
-    bottom: calc(25% + 16px);
+    bottom: calc(25% + 12px);
+  }
+  &__img {
+    position: absolute;
+    width: 40vw;
+    height: calc(100vh - 40px);
+    bottom: 0;
+    right: 0;
+    z-index: 1;
   }
 }
 
