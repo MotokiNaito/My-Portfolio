@@ -8,12 +8,15 @@ class SmoothScrollWrap extends React.Component {
     this.fetchElements();
     this.horizontalScrollSetup();
 
-    const storyScrollbar = this.scrollbar.init(document.querySelector(".home"), {
-      alwaysShowTracks: true
-    });
+    const storyScrollbar = this.scrollbar.init(
+      document.querySelector(".home"),
+      {
+        alwaysShowTracks: true
+      }
+    );
 
     const listener = status => {
-      const x = status.offset.x;
+      const { x } = status.offset;
       console.log(x);
     };
 
@@ -25,6 +28,7 @@ class SmoothScrollWrap extends React.Component {
   };
 
   horizontalScrollSetup = () => {
+    // eslint-disable-next-line global-require
     this.scrollbar = require("smooth-scrollbar").default;
     class HorizontalScroll extends this.scrollbar.ScrollbarPlugin {
       transformDelta(delta, fromEvent) {
@@ -38,7 +42,9 @@ class SmoothScrollWrap extends React.Component {
         };
       }
     }
-    const OverscrollPlugin = require("smooth-scrollbar/plugins/overscroll").default;
+    // eslint-disable-next-line global-require
+    const OverscrollPlugin = require("smooth-scrollbar/plugins/overscroll")
+      .default;
     HorizontalScroll.pluginName = "horizontalScroll";
     OverscrollPlugin.pluginName = "overScroll";
     this.scrollbar.use(HorizontalScroll, OverscrollPlugin);
