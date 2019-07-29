@@ -1,10 +1,10 @@
-import React from "react";
+class SmoothScroll {
+  constructor() {
+    this.scrollContainer = document.querySelector(".scroll-container");
+    this.scrollBar = null;
+  }
 
-class SmoothScrollWrap extends React.Component {
-  scrollbar = null;
-
-  componentDidMount() {
-    this.fetchElements();
+  init = () => {
     this.horizontalScrollSetup();
 
     const storyScrollbar = this.scrollbar.init(
@@ -20,10 +20,6 @@ class SmoothScrollWrap extends React.Component {
     };
 
     storyScrollbar.addListener(listener);
-  }
-
-  fetchElements = () => {
-    this.container = document.querySelector(".home");
   };
 
   horizontalScrollSetup = () => {
@@ -48,21 +44,6 @@ class SmoothScrollWrap extends React.Component {
     OverscrollPlugin.pluginName = "overScroll";
     this.scrollbar.use(HorizontalScroll, OverscrollPlugin);
   };
-
-  render() {
-    // eslint-disable-next-line react/prop-types
-    const { children } = this.props;
-    return (
-      <div
-        className="scroll-container"
-        ref={el => {
-          this.container = el;
-        }}
-      >
-        {children}
-      </div>
-    );
-  }
 }
 
-export default SmoothScrollWrap;
+export default SmoothScroll;
