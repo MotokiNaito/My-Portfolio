@@ -78,16 +78,16 @@
   &__bottom {
     position: absolute;
     width: 400px;
-    height: calc(50vh - 40px);
-    bottom: 40px;
+    height: 50vh;
+    bottom: 0;
     left: 0;
     z-index: 1;
   }
   &__top {
     position: absolute;
     width: 400px;
-    height: calc(50vh - 40px);
-    top: 40px;
+    height: 50vh;
+    top: 0;
     right: 0;
     z-index: 1;
   }
@@ -105,21 +105,52 @@
   }
 }
 
+.project-title {
+  width: 200px;
+  margin-left: 20rem;
+}
+
 .project {
-  width: 600px;
+  width: 640px;
+  margin-right: 20rem;
   position: relative;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
   &__inner {
     width: 410px;
-    margin-left: 190px;
+    margin-left: 230px;
   }
   &__title {
-    width: 190px;
+    width: 230px;
     position: absolute;
     transform: rotate(90deg);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $color-body;
+    color: transparent;
   }
   &__img {
     width: 410px;
     height: 50vh;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+  }
+  &__txt {
+    position: absolute;
+    bottom: calc(50vh + 4rem);
+  }
+}
+
+.contact {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__top {
+    position: absolute;
+    bottom: 50vh;
   }
 }

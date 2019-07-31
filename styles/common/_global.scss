@@ -41,7 +41,7 @@ h1 {
 }
 h2 {
   font-size: 9.3rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 h3 {
   font-size: 3.8rem;
@@ -65,6 +65,14 @@ li {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+a {
+  color: $color-body;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.95rem;
+  letter-spacing: 2px;
 }
 
 small {

@@ -51,7 +51,7 @@ const IndexPage = () => {
           <section className="about-detail panel">
             <div className="about-detail__inner">
               <h2 className="about-detail__intro">
-                Hi, Im Japanese front end developer. I create cool digital
+                Hi, I am Japanese front end developer. I create cool digital
                 projects.
               </h2>
               <p className="about-detail__skills">
@@ -60,19 +60,21 @@ const IndexPage = () => {
               </p>
             </div>
           </section>
-          <div className="panel">
+          <div className="project-title panel">
             <h3>Projects</h3>
           </div>
           <div className="project panel">
             <h1 className="project__title">Bidwell</h1>
             <div className="project__inner">
-              <p className="project__txt">
-                I am modern and of-the-moment. I find inspiration in the here
-                and now to keep you on the
-              </p>
-              <a href="" target="_blank">
-                Visit Site
-              </a>
+              <div className="project__txt">
+                <p>
+                  I am modern and of-the-moment. I find inspiration in the here
+                  and now to keep you
+                </p>
+                <a href="" target="_blank">
+                  Visit Site
+                </a>
+              </div>
               <div className="project__img">
                 <div
                   className="bg-image"
@@ -83,6 +85,56 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
+          <div className="project panel">
+            <h1 className="project__title">Bidwell</h1>
+            <div className="project__inner">
+              <div className="project__txt">
+                <p>
+                  I am modern and of-the-moment. I find inspiration in the here
+                  and now to keep you
+                </p>
+                <a href="" target="_blank">
+                  Visit Site
+                </a>
+              </div>
+              <div className="project__img">
+                <div
+                  className="bg-image"
+                  style={{
+                    backgroundImage: `url(${"https://via.placeholder.com/1000"})`
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="project panel">
+            <h1 className="project__title">Bidwell</h1>
+            <div className="project__inner">
+              <div className="project__txt">
+                <p>
+                  I am modern and of-the-moment. I find inspiration in the here
+                  and now to keep you
+                </p>
+                <a href="" target="_blank">
+                  Visit Site
+                </a>
+              </div>
+              <div className="project__img">
+                <div
+                  className="bg-image"
+                  style={{
+                    backgroundImage: `url(${"https://via.placeholder.com/1000"})`
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+          <section className="contact panel">
+            <div className="contact__top">
+              <h3>Contact</h3>
+              <h2>Just Send me an email</h2>
+            </div>
+          </section>
         </div>
       </main>
     </>
