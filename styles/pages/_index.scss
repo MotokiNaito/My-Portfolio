@@ -108,6 +108,10 @@
 .project-title {
   width: 200px;
   margin-left: 20rem;
+  h3 {
+    position: absolute;
+    top: calc(25vh + 10px);
+  }
 }
 
 .project {
@@ -119,6 +123,20 @@
     margin-right: 0;
   }
 
+  &--even {
+    .project__title {
+      top: 50vh;
+    }
+    .project__img {
+      top: 0;
+      bottom: auto;
+    }
+    .project__txt {
+      top: calc(50vh + 4rem);
+      bottom: auto;
+    }
+  }
+
   &__inner {
     width: 410px;
     margin-left: 230px;
@@ -126,10 +144,12 @@
   &__title {
     width: 230px;
     position: absolute;
-    transform: rotate(90deg);
+    top: 100vh;
+    transform: rotate(-90deg);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: $color-body;
     color: transparent;
+    white-space: nowrap;
   }
   &__img {
     width: 410px;
@@ -140,6 +160,13 @@
   &__txt {
     position: absolute;
     bottom: calc(50vh + 4rem);
+    &__skills {
+      font-weight: 700;
+      margin-top: 2rem;
+    }
+    a {
+      margin-top: 4rem;
+    }
   }
 }
 
@@ -149,8 +176,17 @@
   flex-direction: column;
   align-items: center;
 
-  &__top {
+  &__info {
     position: absolute;
-    bottom: 50vh;
+    top: calc(25vh + 10px);
+    h2 {
+      margin-top: 4rem;
+    }
+    &__list {
+      margin-top: 6rem;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
   }
 }

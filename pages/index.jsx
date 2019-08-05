@@ -56,7 +56,9 @@ const IndexPage = () => {
               </h2>
               <p className="about-detail__skills">
                 Skills <br />
-                HTML, CSS, SCSS, React,js, Redux, Next.js, Express.js, Node.js
+                HTML, CSS, SCSS, React.js, Redux, Next.js, Typescript,
+                Express.js, Node.js, PHP, Wordpress, Sketch, Figma, Photoshop,
+                Illustorator
               </p>
             </div>
           </section>
@@ -85,14 +87,15 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
-          <div className="project panel">
-            <h1 className="project__title">Bidwell</h1>
+          <div className="project panel project--even">
+            <h1 className="project__title">SNS APP</h1>
             <div className="project__inner">
               <div className="project__txt">
                 <p>
                   I am modern and of-the-moment. I find inspiration in the here
                   and now to keep you
                 </p>
+                <p className="project__txt__skills">Wordpress, Gulp</p>
                 <a href="" target="_blank">
                   Visit Site
                 </a>
@@ -130,9 +133,26 @@ const IndexPage = () => {
             </div>
           </div>
           <section className="contact panel">
-            <div className="contact__top">
+            <div className="contact__info">
               <h3>Contact</h3>
               <h2>Just Send me an email</h2>
+              <ul className="contact__info__list">
+                <li>
+                  <a href="mailto:motoki.developer@gmail.com">
+                    motoki.developer@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="" target="_blank">
+                    LikedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="" target="_blank">
+                    Github
+                  </a>
+                </li>
+              </ul>
             </div>
           </section>
         </div>
