@@ -3,9 +3,6 @@ import React, { Fragment } from "react";
 import App, { Container } from "next/app";
 import { PageTransition } from "next-page-transitions";
 
-// Components
-import SmoothScrollWrap from "../components/SmoothScrollWrap";
-
 // Styles
 import "../styles/main.scss";
 
@@ -18,15 +15,13 @@ export default class extends App {
   }
 
   render() {
-    const { Component, pageProps, router } = this.props;
+    const { Component, pageProps } = this.props;
 
     return (
       <Container>
         <Fragment>
           <PageTransition timeout={300} classNames="transition-">
-            <SmoothScrollWrap key={router.route}>
-              <Component {...pageProps} />
-            </SmoothScrollWrap>
+            <Component {...pageProps} />
           </PageTransition>
         </Fragment>
       </Container>

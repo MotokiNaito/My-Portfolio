@@ -1,18 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
+import SmoothScroll from "../classes/SmoothScroll";
 
 const IndexPage = () => {
+  useEffect(() => {
+    // eslint-disable-next-line no-new
+    new SmoothScroll();
+  }, []);
+
   return (
     <>
       <header className="header">
         <nav className="main-nav">
           <ul>
-            <li className="main-nav__list">About</li>
-            <li className="main-nav__list">Projects</li>
-            <li className="main-nav__list">Contact</li>
+            <li className="main-nav__list" data-nav="about">
+              About
+            </li>
+            <li className="main-nav__list" data-nav="projects">
+              Projects
+            </li>
+            <li className="main-nav__list" data-nav="contact">
+              Contact
+            </li>
           </ul>
         </nav>
       </header>
-      <main className="home">
+      <main className="home scroll-container" data-section="about">
         <div className="home-inner">
           <div className="line-container">
             <div className="line line--first" />
@@ -35,7 +47,7 @@ const IndexPage = () => {
               <div
                 className="bg-image"
                 style={{
-                  backgroundImage: `url(${"https://via.placeholder.com/1000"})`
+                  backgroundImage: `url(${"https://i.ibb.co/GCCdy8t/womens.png"})`
                 }}
               />
             </div>
@@ -43,7 +55,7 @@ const IndexPage = () => {
               <div
                 className="bg-image"
                 style={{
-                  backgroundImage: `url(${"https://via.placeholder.com/1000"})`
+                  backgroundImage: `url(${"https://i.ibb.co/R70vBrQ/men.png"})`
                 }}
               />
             </div>
@@ -62,7 +74,7 @@ const IndexPage = () => {
               </p>
             </div>
           </section>
-          <div className="project-title panel">
+          <div className="project-title panel" data-section="projects">
             <h3>Projects</h3>
           </div>
           <div className="project panel">
@@ -81,7 +93,7 @@ const IndexPage = () => {
                 <div
                   className="bg-image"
                   style={{
-                    backgroundImage: `url(${"https://via.placeholder.com/1000"})`
+                    backgroundImage: `url(${"https://i.ibb.co/cvpntL1/hats.png"})`
                   }}
                 />
               </div>
@@ -104,7 +116,7 @@ const IndexPage = () => {
                 <div
                   className="bg-image"
                   style={{
-                    backgroundImage: `url(${"https://via.placeholder.com/1000"})`
+                    backgroundImage: `url(${"https://i.ibb.co/px2tCc3/jackets.png"})`
                   }}
                 />
               </div>
@@ -126,13 +138,13 @@ const IndexPage = () => {
                 <div
                   className="bg-image"
                   style={{
-                    backgroundImage: `url(${"https://via.placeholder.com/1000"})`
+                    backgroundImage: `url(${"https://i.ibb.co/0jqHpnp/sneakers.png"})`
                   }}
                 />
               </div>
             </div>
           </div>
-          <section className="contact panel">
+          <section className="contact panel" data-section="contact">
             <div className="contact__info">
               <h3>Contact</h3>
               <h2>Just Send me an email</h2>
@@ -143,12 +155,20 @@ const IndexPage = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/motoki-naito/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     LikedIn
                   </a>
                 </li>
                 <li>
-                  <a href="" target="_blank">
+                  <a
+                    href="https://github.com/MotokiNaito"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Github
                   </a>
                 </li>
