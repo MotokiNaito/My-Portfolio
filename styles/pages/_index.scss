@@ -53,22 +53,36 @@
 .about {
   width: 65vw;
   z-index: 2;
-  &__fname {
+  &__name {
     position: absolute;
-    left: 40px;
-    bottom: 50%;
     z-index: 5;
-  }
-  &__lname {
-    position: absolute;
-    left: 600px;
-    bottom: calc(25% + 20px);
-    z-index: 5;
+    overflow: hidden;
+    &--first {
+      left: 40px;
+      bottom: 50%;
+    }
+
+    &--last {
+      left: 600px;
+      bottom: calc(25% + 20px);
+    }
+
+    span {
+      display: block;
+    }
   }
   &__title {
     position: absolute;
     left: 40px;
-    bottom: calc(25% + 12px);
+    bottom: calc(25vh + 20px);
+    line-height: 0.8;
+    div {
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+    span {
+      display: block;
+    }
   }
 }
 

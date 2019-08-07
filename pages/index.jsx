@@ -1,14 +1,35 @@
 import React, { useEffect } from "react";
-import SmoothScroll from "../classes/SmoothScroll";
+import SmoothScroll from "../lib/smoothScroll";
+import LandingAnimation from "../lib/landingAnimation";
 
 const IndexPage = () => {
   useEffect(() => {
     // eslint-disable-next-line no-new
     new SmoothScroll();
+    // eslint-disable-next-line no-new
+    new LandingAnimation();
   }, []);
 
   return (
     <>
+      <div className="landing-animation">
+        <div className="landing-animation__name-container">
+          <h1 className="landing-animation__name landing-animation__name--fname">
+            <span>Motoki</span>
+          </h1>
+          <h1 className="landing-animation__name landing-animation__name--lname">
+            <span>Naito</span>
+          </h1>
+        </div>
+        <div className="landing-animation__tiles">
+          <div className="landing-animation__tile" />
+          <div className="landing-animation__tile" />
+          <div className="landing-animation__tile" />
+          <div className="landing-animation__tile" />
+          <div className="landing-animation__tile" />
+          <div className="landing-animation__tile" />
+        </div>
+      </div>
       <header className="header">
         <nav className="main-nav">
           <ul>
@@ -34,12 +55,19 @@ const IndexPage = () => {
             <div className="line line--fifth" />
           </div>
           <section className="about panel">
-            <h1 className="about__fname">Motoki</h1>
-            <h1 className="about__lname">Naito</h1>
+            <h1 className="about__name about__name--first">
+              <span>Motoki</span>
+            </h1>
+            <h1 className="about__name about__name--last">
+              <span>Naito</span>
+            </h1>
             <h3 className="about__title">
-              Front End Developer
-              <br />
-              Based in Vancouver
+              <div>
+                <span>Front End Developer</span>
+              </div>
+              <div>
+                <span>Based in Vancouver</span>
+              </div>
             </h3>
           </section>
           <section className="about-img panel">
