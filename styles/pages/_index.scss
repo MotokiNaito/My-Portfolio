@@ -148,9 +148,6 @@
   }
 
   &--even {
-    .project__title {
-      top: 50vh;
-    }
     .project__img {
       top: 0;
       bottom: auto;
@@ -168,7 +165,7 @@
   &__title {
     width: 230px;
     position: absolute;
-    top: 100vh;
+    top: 70vh;
     transform: rotate(-90deg);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: $color-body;
@@ -180,6 +177,12 @@
     height: 50vh;
     position: absolute;
     bottom: 0;
+    overflow: hidden;
+    .bg-image {
+      width: 130%;
+      left: auto;
+      right: 0;
+    }
   }
   &__txt {
     position: absolute;
@@ -195,22 +198,32 @@
 }
 
 .contact {
-  width: 90vw;
+  width: 100vw;
+  margin-left: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   &__info {
     position: absolute;
-    top: calc(25vh + 10px);
-    h2 {
-      margin-top: 4rem;
+    top: calc(25vh + 5px);
+    width: 80%;
+    z-index: 2;
+    h1 {
+      line-height: 0.8;
     }
     &__list {
-      margin-top: 6rem;
+      margin-top: 4rem;
       li {
         margin-bottom: 1rem;
       }
     }
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: calc(75vh - 20px);
   }
 }

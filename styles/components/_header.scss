@@ -8,6 +8,10 @@
       display: flex;
       li {
         margin-right: 3rem;
+        text-transform: uppercase;
+        font-size: 1.95rem;
+        letter-spacing: 1.6px;
+        cursor: pointer;
       }
     }
   }
