@@ -174,7 +174,12 @@ const IndexPage = () => {
           </div>
           <section className="contact panel" data-section="contact">
             <div className="contact__info">
-              <h1>Feel free to contact me</h1>
+              <h1 className="contact__info__title contact__info__title--first">
+                <span>Drop me</span>
+              </h1>
+              <h1 className="contact__info__title contact__info__title--second">
+                <span>a line</span>
+              </h1>
               <ul className="contact__info__list">
                 <li>
                   <a href="mailto:motoki.developer@gmail.com">
@@ -205,7 +210,7 @@ const IndexPage = () => {
               <div
                 className="bg-image"
                 style={{
-                  backgroundImage: `url(${"https://i.ibb.co/0jqHpnp/sneakers.png"})`
+                  backgroundImage: `url(${"https://i.ibb.co/cvpntL1/hats.png"})`
                 }}
               />
             </div>

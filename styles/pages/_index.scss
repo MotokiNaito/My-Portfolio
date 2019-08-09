@@ -130,8 +130,8 @@
 }
 
 .project-title {
-  width: 200px;
-  margin-left: 20rem;
+  width: calc(100px + 20vw);
+  padding-left: calc(20vw - 100px);
   h3 {
     position: absolute;
     top: calc(25vh + 10px);
@@ -140,7 +140,7 @@
 
 .project {
   width: 640px;
-  margin-right: 20rem;
+  margin-right: 10rem;
   position: relative;
 
   &:last-of-type {
@@ -169,7 +169,7 @@
     transform: rotate(-90deg);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: $color-body;
-    color: transparent;
+    color: $color-main;
     white-space: nowrap;
   }
   &__img {
@@ -199,21 +199,30 @@
 
 .contact {
   width: 100vw;
-  margin-left: 20rem;
+  margin-left: 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   &__info {
-    position: absolute;
-    top: calc(25vh + 5px);
-    width: 80%;
-    z-index: 2;
-    h1 {
-      line-height: 0.8;
+    &__title {
+      position: absolute;
+      z-index: 2;
+      &--first {
+        left: 40px;
+        bottom: 50%;
+      }
+
+      &--second {
+        left: 40vw;
+        bottom: calc(25% + 20px);
+      }
     }
     &__list {
-      margin-top: 4rem;
+      position: absolute;
+      z-index: 2;
+      left: 40px;
+      bottom: calc(25vh + 20px);
       li {
         margin-bottom: 1rem;
       }
@@ -223,7 +232,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 500px;
-    height: calc(75vh - 20px);
+    width: 30vw;
+    height: calc(100vh - 40px);
   }
 }
