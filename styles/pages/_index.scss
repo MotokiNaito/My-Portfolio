@@ -198,7 +198,7 @@
 }
 
 .contact {
-  width: 100vw;
+  width: 90vw;
   margin-left: 20vw;
   display: flex;
   flex-direction: column;
@@ -208,20 +208,20 @@
     &__title {
       position: absolute;
       z-index: 2;
-      &--first {
-        left: 40px;
-        bottom: 50%;
-      }
-
-      &--second {
-        left: 40vw;
-        bottom: calc(25% + 20px);
+      left: 0;
+      bottom: calc(50vh - 10px);
+      text-transform: uppercase;
+      span {
+        display: block;
+        &:last-child {
+          margin-left: 40rem;
+        }
       }
     }
     &__list {
       position: absolute;
       z-index: 2;
-      left: 40px;
+      left: 0;
       bottom: calc(25vh + 20px);
       li {
         margin-bottom: 1rem;
@@ -232,7 +232,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 30vw;
+    width: 35vw;
     height: calc(100vh - 40px);
   }
 }

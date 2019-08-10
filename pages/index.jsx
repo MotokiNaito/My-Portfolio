@@ -174,12 +174,10 @@ const IndexPage = () => {
           </div>
           <section className="contact panel" data-section="contact">
             <div className="contact__info">
-              <h1 className="contact__info__title contact__info__title--first">
-                <span>Drop me</span>
-              </h1>
-              <h1 className="contact__info__title contact__info__title--second">
-                <span>a line</span>
-              </h1>
+              <h2 className="contact__info__title">
+                <span>Feel free to</span>
+                <span>contact me</span>
+              </h2>
               <ul className="contact__info__list">
                 <li>
                   <a href="mailto:motoki.developer@gmail.com">
