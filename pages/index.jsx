@@ -66,7 +66,7 @@ const IndexPage = () => {
                 <span>Front End Developer</span>
               </div>
               <div>
-                <span>Based in Vancouver</span>
+                <span>and Designer</span>
               </div>
             </h3>
           </section>
@@ -89,16 +89,17 @@ const IndexPage = () => {
             </div>
           </section>
           <section className="about-detail panel">
-            <div className="about-detail__inner">
-              <h2 className="about-detail__intro">
-                Hi, I am Japanese front end developer. I create cool digital
-                projects.
+            <div className="about-detail__inner" data-reveal="container">
+              <h2 className="about-detail__intro" data-reveal="fade-in">
+                I Can Help To Bridge The Gap Between Designers
+                And&nbsp;Developers.
               </h2>
-              <p className="about-detail__skills">
+              <p className="about-detail__skills" data-reveal="fade-in">
                 Skills <br />
                 HTML, CSS, SCSS, React.js, Redux, Next.js, Typescript,
-                Express.js, Node.js, PHP, Wordpress, Sketch, Figma, Photoshop,
-                Illustorator
+                Express.js, Node.js, PHP, Wordpress
+                <br />
+                Sketch, Figma, Photoshop, Illustorator
               </p>
             </div>
           </section>
@@ -106,7 +107,7 @@ const IndexPage = () => {
             <h3>Projects</h3>
           </div>
           <div className="project panel">
-            <h1 className="project__title">Bidwell</h1>
+            <h1 className="project__title">E Commerce</h1>
             <div className="project__inner">
               <div className="project__txt">
                 <p>
@@ -151,7 +152,7 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="project panel">
-            <h1 className="project__title">Bidwell</h1>
+            <h1 className="project__title">Tomo Yoga</h1>
             <div className="project__inner">
               <div className="project__txt">
                 <p>
@@ -172,13 +173,17 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
-          <section className="contact panel" data-section="contact">
+          <section
+            className="contact panel"
+            data-section="contact"
+            data-reveal="container"
+          >
             <div className="contact__info">
-              <h2 className="contact__info__title">
+              <h2 className="contact__info__title" data-reveal="fade-in">
                 <span>Feel free to</span>
                 <span>contact me</span>
               </h2>
-              <ul className="contact__info__list">
+              <ul className="contact__info__list" data-reveal="fade-in">
                 <li>
                   <a href="mailto:motoki.developer@gmail.com">
                     motoki.developer@gmail.com

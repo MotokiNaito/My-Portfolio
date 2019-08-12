@@ -75,10 +75,10 @@
     position: absolute;
     left: 40px;
     bottom: calc(25vh + 20px);
-    line-height: 0.8;
+    line-height: 1.4;
     div {
       overflow: hidden;
-      margin-top: 1rem;
+      margin-top: -1rem;
     }
     span {
       display: block;
