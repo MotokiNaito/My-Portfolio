@@ -54,6 +54,7 @@ const IndexPage = () => {
             <div className="line line--fourth" />
             <div className="line line--fifth" />
           </div>
+
           <section className="about panel">
             <h1 className="about__name about__name--first">
               <span>Motoki</span>
@@ -91,15 +92,14 @@ const IndexPage = () => {
           <section className="about-detail panel">
             <div className="about-detail__inner" data-reveal="container">
               <h2 className="about-detail__intro" data-reveal="fade-in">
-                I Can Help To Bridge The Gap Between Designers
-                And&nbsp;Developers.
+                I Can Help To Bridge <br />
+                The Gap Between Designers And&nbsp;Developers.
               </h2>
               <p className="about-detail__skills" data-reveal="fade-in">
                 Skills <br />
                 HTML, CSS, SCSS, React.js, Redux, Next.js, Typescript,
-                Express.js, Node.js, PHP, Wordpress
-                <br />
-                Sketch, Figma, Photoshop, Illustorator
+                Express.js, Node.js, PHP, Wordpress, Sketch, Figma, Photoshop,
+                Illustorator
               </p>
             </div>
           </section>
@@ -110,9 +110,13 @@ const IndexPage = () => {
             <h1 className="project__title">E Commerce</h1>
             <div className="project__inner">
               <div className="project__txt">
+                <h3>E Commerce App</h3>
                 <p>
                   I am modern and of-the-moment. I find inspiration in the here
                   and now to keep you
+                </p>
+                <p className="project__txt__skills">
+                  React.js, Redux, React Hooks, Firebase
                 </p>
                 <a href="" target="_blank">
                   Visit Site
@@ -129,14 +133,17 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="project panel project--even">
-            <h1 className="project__title">SNS APP</h1>
+            <h1 className="project__title">Social Media APP</h1>
             <div className="project__inner">
               <div className="project__txt">
+                <h3>Social Media APP</h3>
                 <p>
                   I am modern and of-the-moment. I find inspiration in the here
                   and now to keep you
                 </p>
-                <p className="project__txt__skills">Wordpress, Gulp</p>
+                <p className="project__txt__skills">
+                  React.js, Next.js, Express.js
+                </p>
                 <a href="" target="_blank">
                   Visit Site
                 </a>
@@ -155,9 +162,13 @@ const IndexPage = () => {
             <h1 className="project__title">Tomo Yoga</h1>
             <div className="project__inner">
               <div className="project__txt">
+                <h3>Tomo Yoga</h3>
                 <p>
                   I am modern and of-the-moment. I find inspiration in the here
                   and now to keep you
+                </p>
+                <p className="project__txt__skills">
+                  PHP, Wordpress, Scss, Javascript, GSAP, Page Transition
                 </p>
                 <a href="" target="_blank">
                   Visit Site

@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: $font-serif;
-  font-size: 2.4rem;
+  font-size: 1.95rem;
   line-height: 1.4;
   letter-spacing: 0.3px;
   color: $color-body;
@@ -38,17 +38,39 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1.2px;
   line-height: 0.76;
+  @media #{$screen-md-max} {
+    font-size: 14.55rem;
+  }
+  @media #{$screen-sm-max} {
+    font-size: 7.45rem;
+  }
 }
 h2 {
   font-size: 9.3rem;
   font-weight: 500;
+  line-height: 1.1;
+  @media #{$screen-md-max} {
+    font-size: 7.45rem;
+  }
+  @media #{$screen-sm-max} {
+    font-size: 3.05rem;
+  }
 }
 h3 {
   font-size: 3.8rem;
   line-height: 1.2;
+  @media #{$screen-md-max} {
+    font-size: 3.05rem;
+  }
+  @media #{$screen-sm-max} {
+    font-size: 1.95rem;
+  }
 }
 h4 {
   font-size: 2.4rem;
+  @media #{$screen-md-max} {
+    font-size: 1.95rem;
+  }
 }
 
 p,

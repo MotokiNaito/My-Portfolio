@@ -3,6 +3,9 @@
   top: 34px;
   left: 40px;
   z-index: 10;
+  @media #{$screen-md-max} {
+    left: 20px;
+  }
   .main-nav {
     ul {
       display: flex;
@@ -13,6 +16,10 @@
         letter-spacing: 1.6px;
         font-weight: 700;
         cursor: pointer;
+        @media #{$screen-sm-max} {
+          font-size: 1.56rem;
+          margin-right: 2rem;
+        }
       }
     }
   }
