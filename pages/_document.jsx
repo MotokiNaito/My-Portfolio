@@ -32,30 +32,33 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://motoki-naito.com/" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="https://motoki-naito.com/" />
-          <meta property="og:image" content="/static/img/home/story.jpg" />
-          <meta name="twitter:image" content="/static/img/home/story.jpg" />
+          <meta property="og:image" content="/static/images/about-bottom.jpg" />
+          <meta
+            name="twitter:image"
+            content="/static/images/about-bottom.jpg"
+          />
 
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/static/img/favicon/apple-touch-icon.png"
+            href="/static/favicon/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/static/img/favicon/favicon-32x32.png"
+            href="/static/favicon/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/static/img/favicon/favicon-16x16.png"
+            href="/static/favicon/favicon-16x16.png"
           />
-          <link rel="manifest" href="/static/img/favicon/site.webmanifest" />
+          <link rel="manifest" href="/static/favicon/site.webmanifest" />
           <link
             rel="mask-icon"
-            href="/static/img/favicon/safari-pinned-tab.svg"
+            href="/static/favicon/safari-pinned-tab.svg"
             color="#5bbad5"
           />
           <meta name="msapplication-TileColor" content="#da532c" />
