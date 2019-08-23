@@ -266,7 +266,7 @@
       position: absolute;
       z-index: 2;
       left: 0;
-      bottom: calc(50vh - 10px);
+      bottom: calc(50vh - 15px);
       text-transform: uppercase;
       @media #{$screen-sm-max} {
         left: 20px;

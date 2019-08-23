@@ -76,7 +76,7 @@ const IndexPage = () => {
               <div
                 className="bg-image"
                 style={{
-                  backgroundImage: `url(${"https://i.ibb.co/GCCdy8t/womens.png"})`
+                  backgroundImage: `url(${"/static/images/about.jpg"})`
                 }}
               />
             </div>
@@ -84,7 +84,7 @@ const IndexPage = () => {
               <div
                 className="bg-image"
                 style={{
-                  backgroundImage: `url(${"https://i.ibb.co/R70vBrQ/men.png"})`
+                  backgroundImage: `url(${"/static/images/about-bottom.jpg"})`
                 }}
               />
             </div>
@@ -118,7 +118,11 @@ const IndexPage = () => {
                 <p className="project__txt__skills">
                   React.js, Redux, React Hooks, Firebase
                 </p>
-                <a href="" target="_blank">
+                <a
+                  href="https://rgb-clothing.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Visit Site
                 </a>
               </div>
@@ -144,7 +148,11 @@ const IndexPage = () => {
                 <p className="project__txt__skills">
                   React.js, Next.js, Express.js
                 </p>
-                <a href="" target="_blank">
+                <a
+                  href="https://next-connect-app.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Visit Site
                 </a>
               </div>
@@ -152,7 +160,7 @@ const IndexPage = () => {
                 <div
                   className="bg-image"
                   style={{
-                    backgroundImage: `url(${"https://i.ibb.co/px2tCc3/jackets.png"})`
+                    backgroundImage: `url(${"/static/images/social-media-app.jpg"})`
                   }}
                 />
               </div>
@@ -170,7 +178,11 @@ const IndexPage = () => {
                 <p className="project__txt__skills">
                   PHP, Wordpress, Scss, Javascript, GSAP, Page Transition
                 </p>
-                <a href="" target="_blank">
+                <a
+                  href="https://tomoyoga.ca/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Visit Site
                 </a>
               </div>
@@ -178,7 +190,7 @@ const IndexPage = () => {
                 <div
                   className="bg-image"
                   style={{
-                    backgroundImage: `url(${"https://i.ibb.co/0jqHpnp/sneakers.png"})`
+                    backgroundImage: `url(${"/static/images/tomoyoga.jpg"})`
                   }}
                 />
               </div>
@@ -224,7 +236,7 @@ const IndexPage = () => {
               <div
                 className="bg-image"
                 style={{
-                  backgroundImage: `url(${"https://i.ibb.co/cvpntL1/hats.png"})`
+                  backgroundImage: `url(${"/static/images/contact.jpg"})`
                 }}
               />
             </div>
