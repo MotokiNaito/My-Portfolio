@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
+
 import SmoothScroll from "../lib/smoothScroll";
 import LandingAnimation from "../lib/landingAnimation";
+
+import SEO from "../components/Seo";
 
 const IndexPage = () => {
   useEffect(() => {
@@ -12,6 +15,10 @@ const IndexPage = () => {
 
   return (
     <>
+      <SEO
+        title="Motoki Naito | Front End Developer &amp; Designer"
+        description="I am Motoki Naito. Front end developer and Designer based in Vancouver"
+      />
       <div className="landing-animation">
         <div className="landing-animation__name-container">
           <h1 className="landing-animation__name landing-animation__name--fname">
@@ -76,7 +83,7 @@ const IndexPage = () => {
               <div
                 className="bg-image"
                 style={{
-                  backgroundImage: `url(${"/static/images/about.jpg"})`
+                  backgroundImage: `url(${"/static/images/about-bottom.jpg"})`
                 }}
               />
             </div>
@@ -84,7 +91,7 @@ const IndexPage = () => {
               <div
                 className="bg-image"
                 style={{
-                  backgroundImage: `url(${"/static/images/about-bottom.jpg"})`
+                  backgroundImage: `url(${"/static/images/about.jpg"})`
                 }}
               />
             </div>
@@ -95,12 +102,12 @@ const IndexPage = () => {
                 I Can Help To Bridge <br />
                 The Gap Between Designers And&nbsp;Developers.
               </h2>
-              <p className="about-detail__skills" data-reveal="fade-in">
+              <h4 className="about-detail__skills" data-reveal="fade-in">
                 Skills <br />
                 HTML, CSS, SCSS, React.js, Redux, Next.js, Typescript,
-                Express.js, Node.js, PHP, Wordpress, Sketch, Figma, Photoshop,
-                Illustorator
-              </p>
+                Express.js, Node.js, PHP, Wordpress <br />
+                Sketch, Figma, Photoshop, Illustorator
+              </h4>
             </div>
           </section>
           <div className="project-title panel" data-section="projects">
@@ -110,10 +117,10 @@ const IndexPage = () => {
             <h1 className="project__title">E Commerce</h1>
             <div className="project__inner">
               <div className="project__txt">
-                <h3>E Commerce App</h3>
+                <h3>E-Commerce Site</h3>
                 <p>
-                  I am modern and of-the-moment. I find inspiration in the here
-                  and now to keep you
+                  Designed and built E-Commerce site with React to grasp React
+                  concepts.
                 </p>
                 <p className="project__txt__skills">
                   React.js, Redux, React Hooks, Firebase
@@ -142,8 +149,8 @@ const IndexPage = () => {
               <div className="project__txt">
                 <h3>Social Media APP</h3>
                 <p>
-                  I am modern and of-the-moment. I find inspiration in the here
-                  and now to keep you
+                  Designed and built Social Media App like Facebook using
+                  Next.js.
                 </p>
                 <p className="project__txt__skills">
                   React.js, Next.js, Express.js
@@ -172,8 +179,8 @@ const IndexPage = () => {
               <div className="project__txt">
                 <h3>Tomo Yoga</h3>
                 <p>
-                  I am modern and of-the-moment. I find inspiration in the here
-                  and now to keep you
+                  Worked on from Branding to Website development to spread his
+                  Yoga identity.
                 </p>
                 <p className="project__txt__skills">
                   PHP, Wordpress, Scss, Javascript, GSAP, Page Transition
