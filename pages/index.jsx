@@ -4,6 +4,9 @@ import SmoothScroll from "../lib/smoothScroll";
 import LandingAnimation from "../lib/landingAnimation";
 
 import SEO from "../components/Seo";
+import Header from "../components/Header";
+import LoadingAnimation from "../components/LoadingAnimation";
+import BackgroundLines from "../components/BackgroundLines";
 
 const IndexPage = () => {
   useEffect(() => {
@@ -19,55 +22,11 @@ const IndexPage = () => {
         title="Motoki Naito | Front End Developer &amp; Designer"
         description="I am Motoki Naito. Front end developer and Designer based in Vancouver"
       />
-      <div className="landing-animation">
-        <div className="landing-animation__name-container">
-          <h1 className="landing-animation__name landing-animation__name--fname">
-            <span>Motoki</span>
-          </h1>
-          <h1 className="landing-animation__name landing-animation__name--lname">
-            <span>Naito</span>
-          </h1>
-        </div>
-        <div className="landing-animation__tiles">
-          <div className="landing-animation__tile" />
-          <div className="landing-animation__tile" />
-          <div className="landing-animation__tile" />
-          <div className="landing-animation__tile" />
-          <div className="landing-animation__tile" />
-          <div className="landing-animation__tile" />
-        </div>
-      </div>
-      <header className="header">
-        <nav className="main-nav">
-          <ul>
-            <li className="main-nav__list link link--reverse" data-nav="about">
-              About
-            </li>
-            <li
-              className="main-nav__list link link--reverse"
-              data-nav="projects"
-            >
-              Projects
-            </li>
-            <li
-              className="main-nav__list link link--reverse"
-              data-nav="contact"
-            >
-              Contact
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <LoadingAnimation />
+      <BackgroundLines />
+      <Header />
       <main className="home scroll-container" data-section="about">
         <div className="home-inner">
-          <div className="line-container">
-            <div className="line line--first" />
-            <div className="line line--second" />
-            <div className="line line--third" />
-            <div className="line line--fourth" />
-            <div className="line line--fifth" />
-          </div>
-
           <section className="about panel">
             <h1 className="about__name about__name--first">
               <span>Motoki</span>

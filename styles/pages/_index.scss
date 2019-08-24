@@ -17,39 +17,6 @@
   z-index: 5;
 }
 
-.line-container {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  .line {
-    width: 100%;
-    height: 1px;
-    background-color: rgba($color-body, 0.2);
-    position: absolute;
-    left: 0;
-
-    &--first {
-      top: 40px;
-    }
-    &--second {
-      top: calc(25% + 20px);
-    }
-    &--third {
-      top: 50%;
-      transform: translate3d(0, -50%, 0);
-    }
-    &--fourth {
-      bottom: calc(25% + 20px);
-    }
-    &--fifth {
-      bottom: 40px;
-    }
-  }
-}
-
 .about {
   width: 65vw;
   z-index: 2;
