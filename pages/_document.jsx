@@ -1,15 +1,13 @@
 import Document, { Head, Main, NextScript } from "next/document";
-import React, { Fragment } from "react";
+import React from "react";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const isProduction = process.env.NODE_ENV === "production";
     const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps, isProduction };
+    return { ...initialProps };
   }
 
   render() {
-    const { isProduction } = this.props;
     const metaTitle = "Motoki Naito | Front End Developer &amp; Designer";
     const metaDescription =
       "I am Motoki Naito. Front end developer and Designer based in Vancouver";
@@ -62,23 +60,19 @@ class MyDocument extends Document {
             color="#5bbad5"
           />
           <meta name="msapplication-TileColor" content="#da532c" />
-          <meta name="theme-color" content="#ffffff" />
-          {isProduction && (
-            <Fragment>
-              {/* <script
-                async
-                src="https://www.googletagmanager.com/gtag/js?id=UA-137071611-1"
-              />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: `window.dataLayer = window.dataLayer || [];
+          <meta name="theme-color" content="#fff" />
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-146415156-1"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '');`
-                }}
-              /> */}
-            </Fragment>
-          )}
+              gtag('config', 'UA-146415156-1');`
+            }}
+          />
         </Head>
         <body>
           <Main />
