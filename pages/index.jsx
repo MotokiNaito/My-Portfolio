@@ -40,13 +40,19 @@ const IndexPage = () => {
       <header className="header">
         <nav className="main-nav">
           <ul>
-            <li className="main-nav__list" data-nav="about">
+            <li className="main-nav__list link link--reverse" data-nav="about">
               About
             </li>
-            <li className="main-nav__list" data-nav="projects">
+            <li
+              className="main-nav__list link link--reverse"
+              data-nav="projects"
+            >
               Projects
             </li>
-            <li className="main-nav__list" data-nav="contact">
+            <li
+              className="main-nav__list link link--reverse"
+              data-nav="contact"
+            >
               Contact
             </li>
           </ul>
@@ -132,12 +138,19 @@ const IndexPage = () => {
                 >
                   Visit Site
                 </a>
+                <a
+                  href="https://github.com/MotokiNaito/RGB-Clothing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github
+                </a>
               </div>
               <div className="project__img">
                 <div
                   className="bg-image"
                   style={{
-                    backgroundImage: `url(${"https://i.ibb.co/cvpntL1/hats.png"})`
+                    backgroundImage: `url(${"/static/images/e-commerce.png"})`
                   }}
                 />
               </div>
@@ -161,6 +174,13 @@ const IndexPage = () => {
                   rel="noopener noreferrer"
                 >
                   Visit Site
+                </a>
+                <a
+                  href="https://github.com/MotokiNaito/Social-Media-App-with-Express-and-Next"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github
                 </a>
               </div>
               <div className="project__img">
