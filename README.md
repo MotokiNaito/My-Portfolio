@@ -1,44 +1,14 @@
-# Example app with Jest tests inside a NextJS TypeScript app
+My Portfolio site using React/Next.js and Greensock.
+(https://motoki-naito.com/)
 
-## How to use
+## Skills I Used
 
-### Using `create-next-app`
+1. React/Next.js
+2. Greensock for animation
 
-Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+## Getting Started
 
-```bash
-npx create-next-app --example with-jest-typescript with-jest-typescript-app
-# or
-yarn create next-app --example with-jest-typescript with-jest-typescript-app
-```
-
-### Download manually
-
-Download the example:
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-jest-typescript
-cd with-jest-typescript
-```
-
-Install it and run:
-
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
-```
-
-## Run Jest tests
-
-```bash
-npm run test
-# or
-yarn test
-```
-
-## The idea behind the example
-
-This example shows a configuration and several examples for a running Jest tests in a NextJS TypeScript app
+1. Clone this repo with `git clone git@github.com:MotokiNaito/My-Portfolio.git`
+2. `npm install` or `yarn`
+3. Run with `npm run dev` or `yarn dev`
+4. Server should be listening on localhost:3000
