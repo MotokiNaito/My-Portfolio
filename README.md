@@ -1,44 +1,51 @@
-# Example app with Jest tests inside a NextJS TypeScript app
+# About
 
-## How to use
+![logo](/static/favicon/android-chrome-256x256.png)
 
-### Using `create-next-app`
+This is my portfolio site to display my projects.<br>
+(https://motoki-naito.com/)
 
-Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+# Skills I used
 
-```bash
-npx create-next-app --example with-jest-typescript with-jest-typescript-app
-# or
-yarn create next-app --example with-jest-typescript with-jest-typescript-app
-```
+![skills](/static/images/skills.png)
 
-### Download manually
+- React
+- Next.js
+- GSAP (Javascript Animation)
+- Sass
+- Smooth Scrollbar
 
-Download the example:
+# Typography
 
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-jest-typescript
-cd with-jest-typescript
-```
+**Font**<br>
+EB Garamond
 
-Install it and run:
+**Typographic scales**<br>
+Major Third (1.25)<br>
+Typographic scales provide consistency, rhythm, hierarchy, and contrast because they are predictable. A well-defined scale helps users understand your content better.
 
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
-```
+# Color
 
-## Run Jest tests
+Primary colors<br>
 
-```bash
-npm run test
-# or
-yarn test
-```
+![skills](/static/images/colors.png)<br>
+#08192d color represents knowledge, integrity, and seriousness.
 
-## The idea behind the example
+# Why React?
 
-This example shows a configuration and several examples for a running Jest tests in a NextJS TypeScript app
+**1. Virtual DOM & Performance**<br>
+A virtual DOM object is a representation of a DOM object, It creates a virtual copy of the original DOM. It's a one-way data binding hence whenever any modifications happen in the web application, the entire UI is re-rendered in virtual DOM representation. Then it checks the difference between the previous DOM representation and new DOM. Once it has done, the real DOM will update only the things that have actually changed. This makes the application faster, and there is no wastage of memory.
+
+**2. JSX**<br>
+JSX stands for JavaScript XML. JSX makes writing React components, the building blocks of React UI,easier by making the syntax developers use for generating these strings of HTML almost identical to the HTML they will inject into the web page.JSX is one of best ReactJS features. Web developers will always go for an easy way out, which is why this is a great choice for many.
+
+**3. Component-Based**<br>
+In React everything is component the web page divided into small components to create a view. Every part of applications visuals would be wrapped inside a self-contained module known as a component. Since component logic is written in JavaScript instead of templates, you can easily pass data through your app and keep the state out of the DOM.Components in ReactJS use to define the visuals and interactions in applications.
+
+# Upcoming Features
+
+1.Converting components to Typescript
+
+2.Implementing single page
+
+3.Adding contentful api
