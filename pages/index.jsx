@@ -19,7 +19,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO
-        title="Motoki Naito | Front End Developer &amp; Designer"
+        title="Motoki Naito | Front End Developer based in Vancouver"
         description="I am Motoki Naito. Front end developer and Designer based in Vancouver"
       />
       <LoadingAnimation />
@@ -39,7 +39,7 @@ const IndexPage = () => {
                 <span>Front End Developer</span>
               </div>
               <div>
-                <span>and Designer</span>
+                <span>based in Vancouver</span>
               </div>
             </h3>
           </section>
@@ -64,8 +64,8 @@ const IndexPage = () => {
           <section className="about-detail panel">
             <div className="about-detail__inner" data-reveal="container">
               <h2 className="about-detail__intro" data-reveal="fade-in">
-                I Can Help To Bridge <br />
-                The Gap Between Designers And&nbsp;Developers.
+                I bridge the gap between <br />
+                design and development.
               </h2>
               <h4 className="about-detail__skills" data-reveal="fade-in">
                 Skills <br />
@@ -82,10 +82,10 @@ const IndexPage = () => {
             <h1 className="project__title">E Commerce</h1>
             <div className="project__inner">
               <div className="project__txt">
-                <h3>E-Commerce Site</h3>
+                <h3>E-Commerce</h3>
                 <p>
-                  Designed and built E-Commerce site with React to grasp React
-                  concepts.
+                  Flexibility, fluidity, and speed of an E-Commerce experience
+                  begins with fluency in React.
                 </p>
                 <p className="project__txt__skills">
                   React.js, Redux, React Hooks, Firebase
@@ -121,8 +121,8 @@ const IndexPage = () => {
               <div className="project__txt">
                 <h3>Social Media APP</h3>
                 <p>
-                  Designed and built Social Media App like Facebook using
-                  Next.js.
+                  Complex environments made simple. A social networking hub
+                  built with Next.js.
                 </p>
                 <p className="project__txt__skills">
                   React.js, Next.js, Express.js
@@ -158,8 +158,9 @@ const IndexPage = () => {
               <div className="project__txt">
                 <h3>Tomo Yoga</h3>
                 <p>
-                  Worked on from Branding to Website development to spread his
-                  Yoga identity.
+                  Breathing in the calm, unfolding for tomorrow. A full-fledged
+                  brand experience: brand identity and website design and
+                  website development.
                 </p>
                 <p className="project__txt__skills">
                   PHP, Wordpress, Scss, Javascript, GSAP, Page Transition
