@@ -33,7 +33,7 @@
       @media #{$screen-md-max} {
         left: 20px;
       }
-      @media #{$screen-md-max} {
+      @media #{$screen-sm-max} {
         bottom: calc(50% + 30px);
       }
     }
@@ -44,7 +44,7 @@
       @media #{$screen-md-max} {
         left: 450px;
       }
-      @media #{$screen-md-max} {
+      @media #{$screen-sm-max} {
         left: 20px;
         bottom: calc(50% - 54px);
       }
@@ -57,7 +57,7 @@
   &__title {
     position: absolute;
     left: 40px;
-    bottom: calc(25vh + 20px);
+    bottom: calc(25vh + 10px);
     line-height: 1.4;
     @media #{$screen-sm-max} {
       width: 100vw;
