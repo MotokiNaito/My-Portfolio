@@ -30,44 +30,7 @@ const IndexPage = () => {
       <Header />
       <main className="home scroll-container" data-section="about">
         <div className="home-inner">
-          <section className="about panel">
-            <h1 className="about__name about__name--first">
-              <span>Motoki</span>
-            </h1>
-            <h1 className="about__name about__name--last">
-              <span>Naito</span>
-            </h1>
-            <h3 className="about__title">
-              <div>
-                <span>Front End Developer</span>
-              </div>
-              <div>
-                <span>based in Vancouver</span>
-              </div>
-            </h3>
-          </section>
-          <section className="about-img panel">
-            <div className="about-img__bottom">
-              <div
-                className="bg-image"
-                style={{
-                  backgroundImage: `url(${"/static/images/about-bottom.jpg"})`
-                }}
-              />
-            </div>
-            <div className="about-img__top">
-              <div
-                className="bg-image"
-                style={{
-                  backgroundImage: `url(${"/static/images/about.jpg"})`
-                }}
-              />
-            </div>
-          </section>
           <About />
-          <div className="project-title panel" data-section="projects">
-            <h3>Projects</h3>
-          </div>
           <Projects />
           <Contact />
         </div>

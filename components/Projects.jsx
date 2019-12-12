@@ -2,6 +2,9 @@ import React from "react";
 
 const Projects = () => (
   <>
+    <div className="project-title panel" data-section="projects">
+      <h3>Projects</h3>
+    </div>
     <div className="project panel">
       <h1 className="project__title">E Commerce</h1>
       <div className="project__inner">
