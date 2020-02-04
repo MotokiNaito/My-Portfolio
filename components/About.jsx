@@ -14,7 +14,7 @@ const About = () => (
           <span>Front End Developer</span>
         </div>
         <div>
-          <span>based in Vancouver</span>
+          <span>based in Japan</span>
         </div>
       </h3>
     </section>
