@@ -10,7 +10,7 @@ class MyDocument extends Document {
   render() {
     const metaTitle = "Motoki Naito | Front End Developer &amp; Designer";
     const metaDescription =
-      "I am Motoki Naito. Front end developer and Designer based in Vancouver";
+      "I am Motoki Naito. Front end developer and Designer based in Japan";
 
     return (
       <html lang="en">
