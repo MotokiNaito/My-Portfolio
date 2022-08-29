@@ -26,7 +26,7 @@ const Contact = () => (
             LikedIn
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             href="https://github.com/MotokiNaito"
             target="_blank"
@@ -34,7 +34,7 @@ const Contact = () => (
           >
             Github
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
     <div className="contact__img">

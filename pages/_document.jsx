@@ -8,9 +8,9 @@ class MyDocument extends Document {
   }
 
   render() {
-    const metaTitle = "Motoki Naito | Front End Developer &amp; Designer";
+    const metaTitle = "Motoki Naito | UX Developer &amp; Designer";
     const metaDescription =
-      "I am Motoki Naito. Front end developer and Designer based in Japan";
+      "I am Motoki Naito. UX developer and Designer based in Japan";
 
     return (
       <html lang="en">

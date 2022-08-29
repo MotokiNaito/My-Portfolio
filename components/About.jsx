@@ -11,7 +11,7 @@ const About = () => (
       </h1>
       <h3 className="about__title">
         <div>
-          <span>Front End Developer</span>
+          <span>UX Developer</span>
         </div>
         <div>
           <span>based in Japan</span>
@@ -44,9 +44,10 @@ const About = () => (
         </h2>
         <h4 className="about-detail__skills" data-reveal="fade-in">
           Skills <br />
+          Figma, Sketch, Photoshop, Illustorator
+          <br />
           HTML, CSS, SCSS, React.js, Redux, Next.js, Typescript, Express.js,
-          Node.js, PHP, Wordpress <br />
-          Sketch, Figma, Photoshop, Illustorator
+          Node.js, PHP, Wordpress
         </h4>
       </div>
     </section>

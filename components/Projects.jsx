@@ -17,13 +17,13 @@ const Projects = () => (
           <p className="project__txt__skills">
             React.js, Redux, React Hooks, Firebase
           </p>
-          <a
+          {/* <a
             href="https://rgb-clothing.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Visit Site
-          </a>
+          </a> */}
           <a
             href="https://github.com/MotokiNaito/RGB-Clothing"
             target="_blank"
@@ -52,13 +52,13 @@ const Projects = () => (
             Next.js.
           </p>
           <p className="project__txt__skills">React.js, Next.js, Express.js</p>
-          <a
+          {/* <a
             href="https://next-connect-app.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Visit Site
-          </a>
+          </a> */}
           <a
             href="https://github.com/MotokiNaito/Social-Media-App-with-Express-and-Next"
             target="_blank"
